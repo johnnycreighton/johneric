@@ -48,6 +48,27 @@ public class formula
 		// actualCals = actualCalsUsed(calories);
 		// System.out.println("Actual calories used working at an average rate = " + actualCals);
 	
+		/*for(int i =0; i<mant.length;++i)
+		{
+
+		}
+		Random rand = new Random();
+		double x = rand.nextDouble(1000)+1;
+		mant[0] = "How many watts does running "+x+" miles produce?";
+		mant[1] = System.out.println();;
+		mant[2] = "";
+		mant[3] = "";
+		mant[4] = "";
+		mant[5] = "";
+		mant[6] = "";
+		mant[7] = "";
+		mant[8] = "";
+		mant[9] = "";
+
+		*/
+
+
+
 		System.out.println("Lets try a quiz:\n");
 
 		//.75 of a calorie burned per push-up
