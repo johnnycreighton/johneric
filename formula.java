@@ -3,45 +3,52 @@ import java.util.*;
 public class formula
 {
 	static double rateOfWork = .25;
+	static double kiloJoule = 4186;
 
 	public static void main(String args [])
 	{
 		Scanner input = new Scanner(System.in);
 		double calories,joules,watts,time,actualCals;
 
-		System.out.println("Enter amount of time in minutes");
-		time = input.nextDouble();
-		time *=60;
-
-		//watts = 280;
-		//joules = watts*time;
-		//System.out.println(joules);
+		// System.out.println("Enter amount of time in minutes");
+		// time = input.nextDouble();
+		// time *=60;
 		
 
-		//************************************************
-		System.out.println("Enter Calories used per hour");
+		//**********************************************************
+		System.out.println("This piece will convert calories into watts... \n");
+		System.out.println("Enter Calories:");
 		calories = input.nextDouble();
+		System.out.println("Enter amount of time in minutes, it took to use them calories:");
+		time = input.nextDouble();
+		time *=60;
 		joules = calsToJoules(calories);  // calories to watts
 		watts = joules/time;
-		System.out.println("Amount of power used in watts = " +watts);
-		//***************************************************
-
+		System.out.println("Using "+calories+" calories of energy in "+time/60+" minutes produces "+watts+" watts of power.");
+		//**********************************************************
+		
+		System.out.println("\n\n*********************************\n\n"); // new line
+		time = 0;
 
 		//**********************************************************
-		System.out.println("Enter watts used in an hour");
+		System.out.println("This piece of code will cnovert watts to calories...\n");
+		System.out.println("Enter watts:");
 		watts = input.nextDouble();
-		joules= wattsToJoules(watts, time);  //watts to calories
+		System.out.println("Enter amount of time in minutes, it took to use the wattage:");
+		time = input.nextDouble();
+		time *=60;
+		joules= wattsToJoules(watts,time);  //watts to calories
 		calories = joulesToCals(joules);
-		System.out.println(watts +" watts converting to calories = " +calories);
-		//*************************************************************
-
+		System.out.println(watts + " watts converting into calories = " +calories);
+		//**********************************************************
+		
+		System.out.println();
+		time =0;
 
 		// actualCals = actualCalsUsed(calories);
 		// System.out.println("Actual calories used working at an average rate = " + actualCals);
-		
-
-
 	}
+
 	public static double wattsToJoules(double watts, double time)
 	{
 		return watts*time;
@@ -51,13 +58,14 @@ public class formula
 	{
 		return calories/rateOfWork;
 	}
+	
 	public static double calsToJoules(double cals)
 	{
-
-		return cals*4186;
+		return cals*kiloJoule;
 	}
+	
 	public static double joulesToCals(double joules)
 	{
-		return joules/4186;
+		return joules/kiloJoule;
 	}
 }
