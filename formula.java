@@ -47,6 +47,55 @@ public class formula
 
 		// actualCals = actualCalsUsed(calories);
 		// System.out.println("Actual calories used working at an average rate = " + actualCals);
+	
+		System.out.println("Lets try a quiz:\n");
+
+		//.75 of a calorie burned per push-up
+
+		String mant[] = new String[20];
+		mant[0] = "How many push-ups does it take to power a 60 watt bulb for an hour?";
+		System.out.println(mant[0]);
+		System.out.println("a: 69");
+		System.out.println("b: 6");
+		System.out.println("c: 600");
+		System.out.println("d: 1");
+		char a = input.next().charAt(0);  //i know this is retarded i was  just messing around a bit
+		
+			if(a == 'a')
+			{
+				System.out.println("yeowwww");
+			}
+			else if(a=='b')
+			{
+				System.out.println("nope");
+			}
+			else if(a=='c')
+			{
+				System.out.println("nah");
+			}
+			else if(a=='d')
+			{
+				System.out.println("no");
+			}
+			else
+			{
+				System.out.println("Please enter either a,b,c,d:");
+			}
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+
+
 	}
 
 	public static double wattsToJoules(double watts, double time)
