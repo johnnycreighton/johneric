@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SustainableSmarts</string>
+    <string name="main_about_us_message">The goal with this app is to provide
+        its users with another means of measuring electricity a little out of the norm
+        but hopefully easier to intuitively adopt. We felt that if we can give users
+        an idea of the average physical activity they would have to perform to generate the same
+        power as our everyday appliances, we might give them a shock. Pun intended..!
+        With the end goal making them more aware and conscious of power they might be wasting.
+        We have created a quiz to see if peoples judgement of power usage is as accurate as
+        they might think and if not hopefully our app can help align the two. With more time
+        we would like to add more features and strengthen current ones. We have other plans
+        that are not practical within the time frame. </string>
+</resources>
